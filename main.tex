@@ -109,19 +109,19 @@
 \newcommand{\resumeSubheading}[4]{
 \vspace{0.5mm}\item
     \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
-        \textbf{#1} & \textit{\footnotesize{#4}} \\
-        \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
+        \textbf{#1} & {#4} \\
+        {#3} & {#2}\\
     \end{tabular*}
     \vspace{-2.4mm}
 }
 
-\newcommand{\resumeProject}[4]{
-\vspace{0.5mm}\item
-    \begin{tabular*}{0.98\textwidth}[t]{@{\extracolsep{\fill}}>{\raggedright\arraybackslash}p{0.76\textwidth}r}
-        \textbf{#1} & \textit{\footnotesize{#3}} \\
-        \footnotesize{\textit{#2}} & \footnotesize{#4}
-    \end{tabular*}
-    \vspace{-2.4mm}
+\newcommand{\resumeProject}[3]{
+  \vspace{0.5mm}\item
+  \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & {#3} \\
+    {#2} &
+  \end{tabular*}
+  \vspace{0.5mm}
 }
 
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
@@ -173,74 +173,98 @@
 \end{center}
 \vspace{-5mm}
 
-\begin{center}
-    \small{
-    +84-583-885-391 | \href{mailto:vuongviethung156@gmail.com}{vuongviethung156@gmail.com}
-    }
-\end{center}
-\vspace{-5mm}
+\section{\textbf{Personal Details}}
 
-\begin{center}
-    \small{
-    \socialicon{\faLinkedin} \href{https://www.linkedin.com/in/v%C6%B0%C6%A1ng-vi%E1%BB%87t-h%C3%B9ng-843199212/}{vương-việt-hùng} | 
-    \socialicon{\faGithub} \href{https://github.com/vuong-viet-hung}{vuong-viet-hung} | \orcidlink{0009-0006-8041-7608} \href{https://orcid.org/my-orcid?orcid=0009-0006-8041-7608}{0009-0006-8041-7608}
-    }
-\end{center}
-\vspace{-5mm}
-\begin{center}
-    \small{Hanoi, Vietnam - 11025, Vietnam}
-\end{center}
+\begin{tabular}{p{0.475\textwidth} p{0.525\textwidth}}
 
-\vspace{-4mm}
+\begin{tabular}[t]{l@{\hspace{0.8cm}}l}
+Full name:     & Vương Việt Hùng \\
+Phone:         & +84-583-885-391 \\
+Email:         & \href{mailto:vuongviethung156@gmail.com}{vuongviethung156@gmail.com} \\
+Residence:     & Hanoi, Vietnam \\
+Nationality:   & Vietnamese \\
+\end{tabular}
 
-\section{\textbf{Education}}
+&
+
+\begin{tabular}[t]{l@{\hspace{0.5cm}}l}
+
+Languages: & Vietnamese (Native), English (IELTS 7.5) \\
+
+ORCID: &
+\orcidlink{0009-0006-8041-7608}
+\href{https://orcid.org/0009-0006-8041-7608}{0009-0006-8041-7608} \\
+
+Google Scholar: &
+\href{https://scholar.google.com/citations?user=-ajygUwAAAAJ\&hl=en}{Vương Việt Hùng} \\
+
+GitHub: &
+\socialicon{\faGithub}
+\href{https://github.com/vuong-viet-hung}{vuong-viet-hung} \\
+
+LinkedIn: &
+\socialicon{\faLinkedin}
+\href{https://www.linkedin.com/in/v%C6%B0%C6%A1ng-vi%E1%BB%87t-h%C3%B9ng-843199212/}{vương-việt-hùng}
+\end{tabular}
+
+\end{tabular}
+
+\section{\textbf{Educational Qualifications}}
 \vspace{-0.4mm}
+
 \resumeSubHeadingListStart
 
 \resumeSubheading
-{Soongsil University}{Seoul, South Korea}
-{Master's Degree in Electronic Engineering}{March 2024 - March 2026}
+  {Soongsil University}{March 2024 -- March 2026}
+  {Master's Degree in Electronic Engineering}{Seoul, South Korea}
+
 \resumeItemListStart
-\item GPA: 4.24/4.50
+  \item GPA: 4.24/4.50
+  \item Thesis: Scene Flow-Guided Online Continual LiDAR Panoptic Tracking
+  \item Thesis length: 10,387 words
 \resumeItemListEnd
 
+
 \resumeSubheading
-{Hanoi University of Science and Technology}{Hanoi, Vietnam}
-{Bachelor's Degree in Control Engineering and Automation}{August 2019 - September 2023}
-\resumeItemListStart
-\item GPA: 3.34/4.00
+  {Hanoi University of Science and Technology}{August 2019 -- September 2023}
+  {Bachelor's Degree in Control Engineering and Automation}{Hanoi, Vietnam}
+
+  \resumeItemListStart
+  \item GPA: 3.34/4.00
+  \item Thesis: Stereo Matching and 3D Reconstruction
+  \item Thesis length:
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
 \vspace{-6mm}
 
-\section{\textbf{Experience}}
+\section{\textbf{Employment History}}
 
 \vspace{-0.4mm}
 
 \resumeSubHeadingListStart
 
 \resumeSubheading
-  {VinDynamics}{Hanoi, Vietnam}
-  {SLAM \& Navigation Engineer}{March 2026 -- current}
+  {VinDynamics}{March 2026 -- current}
+  {SLAM \& Navigation Engineer}{Hanoi, Vietnam}
 \vspace{3mm}
 \small{Developed and deployed SLAM and height mapping systems for humanoid robotic platforms, with a focus on sensor integration, system evaluation, and optimization.}
 
 \resumeSubheading
-  {ANDA Lab, Soongsil University}{Seoul, South Korea}
-  {Research Assistant}{March 2024 -- March 2026}
+  {ANDA Lab, Soongsil University}{March 2024 -- March 2026}
+  {Research Assistant}{Seoul, South Korea}
 \vspace{3mm}
 \small{Conducted research in LiDAR panoptic segmentation, scene completion, domain adaptation, and continual learning; contributed to peer-reviewed publications, researcher mentoring, and technical seminars.}
 
 \resumeSubheading
-  {Rikai Mind}{Hanoi, Vietnam}
-  {AI Engineer Intern}{August 2022 -- January 2023}
+  {Rikai Mind}{August 2022 -- January 2023}
+  {AI Engineer Intern}{Hanoi, Vietnam}
 \vspace{3mm}
 \small{Developed and deployed a computer vision system for object volume estimation from monocular images and camera--object distance.}
 
 \resumeSubheading
-  {Mandevices Laboratory, Hanoi University of Science and Technology}{Hanoi, Vietnam}
-  {Research Assistant}{August 2020 -- September 2023}
+  {Mandevices Laboratory, Hanoi University of Science and Technology}{August 2020 -- September 2023}
+  {Research Assistant}{Hanoi, Vietnam}
 \vspace{3mm}
 \small{Conducted research in deep-learning-based bearing fault diagnosis and contributed to data collection, publications, and researcher mentoring.}
 
@@ -248,103 +272,145 @@
 \vspace{-6mm}
 
 
-\section{\textbf{Publications}}
+\section{\textbf{Research Outputs}
+\hfill
+{\scriptsize J=Journal, C=Conference, S=In Submission}}
 
-\resumeSubHeadingListStart
+\vspace{0.5mm}
 
-  \resumeProject
-    {Domain Adaptive LiDAR Panoptic Segmentation via Pseudo-Supervised Instance Learning}
-    {First author -- IEEE Transactions on Intelligent Transportation Systems, Early Access}
-    {May 2026}
+\subsection*{Published Research:}
 
-  {\small DOI: \href{https://doi.org/10.1109/TITS.2026.3695516}{10.1109/TITS.2026.3695516}}
+\small{
 
-  \resumeItemListStart
+\begin{enumerate}[
+    leftmargin=*,
+    labelsep=0.5em,
+    align=left,
+    widest={[\textbf{J.1}]},
+    itemindent=0em
+]
+
+\item[\textbf{[J.1]}]
+\textbf{Vuong, H. V.}, \& Yoo, M. (2026).
+Domain adaptive LiDAR panoptic segmentation via pseudo-supervised instance learning.
+\textit{IEEE Transactions on Intelligent Transportation Systems}.
+\href{https://doi.org/10.1109/TITS.2026.3695516}
+{https://doi.org/10.1109/TITS.2026.3695516}
+
+Journal Impact Factor: 9.1
+
+\begin{itemize}[leftmargin=1.5em]
     \item Proposed PILLA, a domain adaptation framework that generates instance-level pseudo-labels via unsupervised clustering and applies a noise-aware loss for robust pseudo-supervision.
     \item Achieved 35.97\% PQ on nuScenes in cross-dataset adaptation from SemanticKITTI, outperforming AdaptLPS by 13.14 percentage points.
-  \resumeItemListEnd
+\end{itemize}
 
 
-  \resumeProject
-    {Instance Embedding as Queries for DETR-based LiDAR Panoptic Segmentation}
-    {Co-first author -- IEEE Transactions on Intelligent Vehicles, Vol. 10, Issue 10, pp. 4629 - 4641}
-    {October 2025}
+\item[\textbf{[J.2]}]
+Ha-Phan, N.-Q., \textbf{Vuong, H. V.}, \& Yoo, M. (2025).
+Instance embedding as queries for DETR-based LiDAR panoptic segmentation.
+\textit{IEEE Transactions on Intelligent Vehicles, 10}(10), 4629--4641.
+\href{https://doi.org/10.1109/TIV.2024.3488035}
+{https://doi.org/10.1109/TIV.2024.3488035}
 
-  {\small DOI: \href{https://doi.org/10.1109/TIV.2024.3488035}{10.1109/TIV.2024.3488035}}
+Ha-Phan, N.-Q. and Vuong, H. V. contributed equally to this work.
 
-  \resumeItemListStart
+Journal Impact Factor: 14.3 \\
+
+\begin{itemize}[leftmargin=1.5em]
     \item Proposed a DETR-based architecture that uses instance embeddings as object queries for LiDAR panoptic segmentation.
-    \item Achieved state-of-the-art performance with 63.40\% PQ on SemanticKITTI benchmark and 77.08\% PQ on nuScenes benchmark, outperforming previous methods by 1.20 and 1.94 percentage points, respectively.
-  \resumeItemListEnd
+    \item Achieved 63.40\% PQ on SemanticKITTI and 77.08\% PQ on nuScenes, outperforming previous methods by 1.20 and 1.94 percentage points, respectively.
+\end{itemize}
 
 
-  \resumeProject
-    {FuPaSCo: Long-range and Local Context Fusion for 3D Panoptic Scene Completion}
-    {Co-author -- Image and Vision Computing, Vol. 163, pp. 105776}
-    {November 2025}
+\item[\textbf{[J.3]}]
+Nguyen, K. N. M., \textbf{Vuong, H. V.}, Ha-Phan, N.-Q., \& Yoo, M. (2025).
+FuPaSCo: Long-range and local context fusion for 3D panoptic scene completion.
+\textit{Image and Vision Computing, 163}, 105776.
+\href{https://doi.org/10.1016/j.imavis.2025.105776}
+{https://doi.org/10.1016/j.imavis.2025.105776}
 
-  {\small DOI: \href{https://doi.org/10.1016/j.imavis.2025.105776}{10.1016/j.imavis.2025.105776}}
+Journal Impact Factor: 4.2
 
-  \resumeItemListStart
+\begin{itemize}[leftmargin=1.5em]
     \item Developed FuPaSCo, a dual-branch CNN--Transformer framework that combines local and long-range features through feature fusion and alignment for LiDAR panoptic scene completion.
-    \item Achieved 26.10\% $PQ^\dagger$ on SemanticKITTI benchmark, outperforming the previous best method PasCo by 2.49 percentage points.
-  \resumeItemListEnd
+    \item Achieved 26.10\% $PQ^\dagger$ on SemanticKITTI, outperforming PaSCo by 2.49 percentage points.
+\end{itemize}
 
 
-  \resumeProject
-    {Generalized Simulation-Based Domain Adaptation Approach for Intelligent Bearing Fault Diagnosis}
-    {Co-author -- Arabian Journal for Science and Engineering, Vol. 49, Issue 12, pp. 16941--16957}
-    {July 2024}
+\item[\textbf{[J.4]}]
+Nguyen, T. H., \textbf{Vuong, V. H.}, Dao, D. T., Tran, T. T., \& Hoang, S. H. (2024).
+Generalized simulation-based domain adaptation approach for intelligent bearing fault diagnosis.
+\textit{Arabian Journal for Science and Engineering, 49}(12), 16941--16957.
+\href{https://doi.org/10.1007/s13369-024-09282-1}
+{https://doi.org/10.1007/s13369-024-09282-1}
 
-  {\small DOI: \href{https://doi.org/10.1007/s13369-024-09282-1}{10.1007/s13369-024-09282-1}}
+Journal Impact Factor: 3.1
 
-  \resumeItemListStart
+\begin{itemize}[leftmargin=1.5em]
     \item Developed a simulation-based domain adaptation approach that generates synthetic vibration signals from bearing geometry to address data scarcity in intelligent bearing fault diagnosis.
     \item Achieved 74--98\% fault classification accuracy across different bearing types using a CNN trained on synthesized vibration signals.
-  \resumeItemListEnd
+\end{itemize}
 
 
-  \resumeProject
-    {ConvMamba: A Data-Efficient Neural Network for Bearing Fault Diagnosis}
-    {Co-author -- 7th International Conference on Green Technology and Sustainable Development (GTSD), pp. 165-172. IEEE. 2024-07-25, Ho Chi Minh City, Vietnam}
-    {July 2024}
+\item[\textbf{[C.1]}]
+Nguyen, T. H., Le, H. A., \textbf{Vuong, V. H.}, Tran, L. D. A.,
+Dao, D. T., Tran, T. T., \& Hoang, S. H. (2024).
+ConvMamba: A data-efficient neural network for bearing fault diagnosis.
+In \textit{2024 7th International Conference on Green Technology and Sustainable Development (GTSD)}
+(pp. 165--172). IEEE.
+\href{https://doi.org/10.1109/GTSD62346.2024.10674880}
+{https://doi.org/10.1109/GTSD62346.2024.10674880}
 
-  {\small DOI: \href{https://doi.org/10.1109/GTSD62346.2024.10674880}{10.1109/GTSD62346.2024.10674880}}
-
-  \resumeItemListStart
+\begin{itemize}[leftmargin=1.5em]
     \item Developed ConvMamba, a data-efficient architecture combining convolutional networks and Vision Mamba for bearing fault diagnosis.
     \item Improved classification accuracy by 27 percentage points over the predecessor Hybrid-CNN-MLP model on the CWRU bearing fault dataset.
-  \resumeItemListEnd
+\end{itemize}
 
-\resumeSubHeadingListEnd
+\end{enumerate}
 
-
-\section{\textbf{Manuscripts Under Review}}
-
-\resumeSubHeadingListStart
-
-\resumeProject
-  {SM3-PSC: Sparse Multi-Modal Mamba for 3D Panoptic Scene Completion with Multi-Scale Feature Refinement}
-  {Co-author -- Manuscript submitted to IEEE Transactions on Image Processing}
-  {2026}
-
-\resumeItemListStart
-  \item Developed SM3-PSC, a sparse multi-modal framework that fuses LiDAR and camera features and employs Mamba-based multi-scale feature refinement for 3D panoptic scene completion.
-  \item Achieved 29.20\% $PQ^\dagger$ on SemanticKITTI, outperforming the previous best method by 3.10 percentage points through improved completion of both object instances and surrounding regions.
-\resumeItemListEnd
+}
 
 
-\resumeProject
-  {LW-PSC: Lightweight Design for LiDAR Panoptic Scene Completion}
-  {Co-author -- Manuscript submitted to Applied Soft Computing}
-  {2026}
+\subsection*{Manuscripts Under Review:}
 
-\resumeItemListStart
-  \item Developed LW-PSC, a lightweight BEV-based framework that combines Cartesian and Polar representations with center-focused feature refinement for real-time LiDAR panoptic scene completion.
-  \item Achieved 13.59\% PQ at 11.3 FPS on SemanticKITTI, outperforming PaSCo by 1.47 percentage points in PQ while reducing the model size from 40.65M to 29.16M parameters.
-\resumeItemListEnd
+\small{
 
-\resumeSubHeadingListEnd
+\begin{enumerate}[
+    leftmargin=*,
+    labelsep=0.5em,
+    align=left,
+    widest={[\textbf{S.1}]},
+    itemindent=0em
+]
+
+\item[\textbf{[S.1]}]
+Pham, T. P., \textbf{Vuong, H. V.}, Ha-Phan, N.-Q., \& Yoo, M. (2026).
+SM3-PSC: Sparse multi-modal Mamba for 3D panoptic scene completion with multi-scale feature refinement.
+\textit{Manuscript submitted for publication to IEEE Transactions on Image Processing}.
+
+Journal Impact Factor: 15.3
+
+\begin{itemize}[leftmargin=1.5em]
+    \item Developed SM3-PSC, a sparse multi-modal framework that fuses RGB semantics with LiDAR voxels through deformable cross-attention and uses Mamba for efficient long-range context modeling.
+    \item Achieved 28.20\% $PQ^\dagger$ on SemanticKITTI, outperforming FuPaSCo by 2.10 percentage points while running the 3D pipeline 2.8$\times$ faster.
+\end{itemize}
+
+
+\item[\textbf{[S.2]}]
+Nguyen, K. N. M., \textbf{Vuong, H. V.}, Ha-Phan, N.-Q., \& Yoo, M. (2026).
+LW-PSC: Lightweight design for LiDAR panoptic scene completion.
+\textit{Manuscript submitted for publication to Applied Soft Computing}.
+
+Journal Impact Factor: 7.8
+
+\begin{itemize}[leftmargin=1.5em]
+    \item Developed LW-PSC, a lightweight BEV-based framework that combines Cartesian and Polar representations with center-focused feature refinement for real-time LiDAR panoptic scene completion.
+    \item Achieved 13.59\% PQ at 11.3 FPS on SemanticKITTI, outperforming PaSCo by 1.47 percentage points while reducing the model size from 40.65M to 29.16M parameters.
+\end{itemize}
+
+\end{enumerate}
+
+}
 
 
 \section{\textbf{Projects}}
@@ -426,15 +492,6 @@
   \resumeSubItem{Development and deployment tools: }
     {Git, GitHub, GitLab, Docker, FastAPI, Milvus}
   \resumeSubItem{Others: }{LaTex}
- \resumeHeadingSkillEnd
-
-\section{\textbf{Languages}}
-\vspace{-0.4mm}
- \resumeHeadingSkillStart
-  \resumeSubItem{English: }
-    {IELTS 7.5}
-  \resumeSubItem{Vietnamese: }
-    {Native speaker}
  \resumeHeadingSkillEnd
 
 \end{document}
