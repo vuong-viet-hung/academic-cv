@@ -117,7 +117,7 @@
 
 \newcommand{\resumeProject}[4]{
 \vspace{0.5mm}\item
-    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \begin{tabular*}{0.98\textwidth}[t]{@{\extracolsep{\fill}}>{\raggedright\arraybackslash}p{0.76\textwidth}r}
         \textbf{#1} & \textit{\footnotesize{#3}} \\
         \footnotesize{\textit{#2}} & \footnotesize{#4}
     \end{tabular*}
@@ -222,15 +222,15 @@
 
 \resumeSubheading
   {VinDynamics}{Hanoi, Vietnam}
-  {SLAM \& Navigation Engineer}{February 2026 -- September 2026}
+  {SLAM \& Navigation Engineer}{March 2026 -- current}
 \vspace{3mm}
 \small{Developed and deployed SLAM and height mapping systems for humanoid robotic platforms, with a focus on sensor integration, system evaluation, and optimization.}
 
 \resumeSubheading
   {ANDA Lab, Soongsil University}{Seoul, South Korea}
-  {Research Assistant}{March 2024 -- February 2026}
+  {Research Assistant}{March 2024 -- March 2026}
 \vspace{3mm}
-\small{Conducted research in LiDAR-based 3D computer vision for autonomous driving and contributed to peer-reviewed publications, researcher mentoring, and technical seminars.}
+\small{Conducted research in LiDAR panoptic segmentation, scene completion, domain adaptation, and continual learning; contributed to peer-reviewed publications, researcher mentoring, and technical seminars.}
 
 \resumeSubheading
   {Rikai Mind}{Hanoi, Vietnam}
@@ -240,7 +240,7 @@
 
 \resumeSubheading
   {Mandevices Laboratory, Hanoi University of Science and Technology}{Hanoi, Vietnam}
-  {Research Assistant}{August 2020 -- August 2023}
+  {Research Assistant}{August 2020 -- September 2023}
 \vspace{3mm}
 \small{Conducted research in deep-learning-based bearing fault diagnosis and contributed to data collection, publications, and researcher mentoring.}
 
@@ -254,34 +254,47 @@
 
   \resumeProject
     {Domain Adaptive LiDAR Panoptic Segmentation via Pseudo-Supervised Instance Learning}
-    {First author -- IEEE Transactions on Intelligent Transportation Systems}
+    {First author -- IEEE Transactions on Intelligent Transportation Systems, Early Access}
     {May 2026}
 
-  {\small DOI: \href{https://doi.org/XX.XXXX/XXXXX}{XX.XXXX/XXXXX}}
+  {\small DOI: \href{https://doi.org/10.1109/TITS.2026.3695516}{10.1109/TITS.2026.3695516}}
 
   \resumeItemListStart
     \item Proposed PILLA, a domain adaptation framework that generates instance-level pseudo-labels via unsupervised clustering and applies a noise-aware loss for robust pseudo-supervision.
-    \item Achieved state-of-the-art performance on nuScenes, outperforming the prior domain adaptation baseline by 10.97 percentage points in panoptic quality (PQ).
+    \item Achieved 35.97\% PQ on nuScenes in cross-dataset adaptation from SemanticKITTI, outperforming AdaptLPS by 13.14 percentage points.
   \resumeItemListEnd
 
 
   \resumeProject
     {Instance Embedding as Queries for DETR-based LiDAR Panoptic Segmentation}
-    {Co-first author -- IEEE Transactions on Intelligent Vehicles}
-    {October 2024}
+    {Co-first author -- IEEE Transactions on Intelligent Vehicles, Vol. 10, Issue 10, pp. 4629 - 4641}
+    {October 2025}
 
-  {\small DOI: \href{https://doi.org/XX.XXXX/XXXXX}{XX.XXXX/XXXXX}}
+  {\small DOI: \href{https://doi.org/10.1109/TIV.2024.3488035}{10.1109/TIV.2024.3488035}}
 
   \resumeItemListStart
-    \item Proposed a DETR-based architecture that uses learned instance embeddings as object queries for LiDAR panoptic segmentation.
-    \item Achieved state-of-the-art performance on nuScenes, outperforming the previous best method by 1.20 percentage points in panoptic quality (PQ).
+    \item Proposed a DETR-based architecture that uses instance embeddings as object queries for LiDAR panoptic segmentation.
+    \item Achieved state-of-the-art performance with 63.40\% PQ on SemanticKITTI benchmark and 77.08\% PQ on nuScenes benchmark, outperforming previous methods by 1.20 and 1.94 percentage points, respectively.
+  \resumeItemListEnd
+
+
+  \resumeProject
+    {FuPaSCo: Long-range and Local Context Fusion for 3D Panoptic Scene Completion}
+    {Co-author -- Image and Vision Computing, Vol. 163, pp. 105776}
+    {November 2025}
+
+  {\small DOI: \href{https://doi.org/10.1016/j.imavis.2025.105776}{10.1016/j.imavis.2025.105776}}
+
+  \resumeItemListStart
+    \item Developed FuPaSCo, a dual-branch CNN--Transformer framework that combines local and long-range features through feature fusion and alignment for LiDAR panoptic scene completion.
+    \item Achieved 26.10\% $PQ^\dagger$ on SemanticKITTI benchmark, outperforming the previous best method PasCo by 2.49 percentage points.
   \resumeItemListEnd
 
 
   \resumeProject
     {Generalized Simulation-Based Domain Adaptation Approach for Intelligent Bearing Fault Diagnosis}
     {Co-author -- Arabian Journal for Science and Engineering, Vol. 49, Issue 12, pp. 16941--16957}
-    {2024}
+    {July 2024}
 
   {\small DOI: \href{https://doi.org/10.1007/s13369-024-09282-1}{10.1007/s13369-024-09282-1}}
 
@@ -293,7 +306,7 @@
 
   \resumeProject
     {ConvMamba: A Data-Efficient Neural Network for Bearing Fault Diagnosis}
-    {Co-author -- 2024 7th International Conference on Green Technology and Sustainable Development (GTSD)}
+    {Co-author -- 7th International Conference on Green Technology and Sustainable Development (GTSD), pp. 165-172. IEEE. 2024-07-25, Ho Chi Minh City, Vietnam}
     {July 2024}
 
   {\small DOI: \href{https://doi.org/10.1109/GTSD62346.2024.10674880}{10.1109/GTSD62346.2024.10674880}}
@@ -301,6 +314,34 @@
   \resumeItemListStart
     \item Developed ConvMamba, a data-efficient architecture combining convolutional networks and Vision Mamba for bearing fault diagnosis.
     \item Improved classification accuracy by 27 percentage points over the predecessor Hybrid-CNN-MLP model on the CWRU bearing fault dataset.
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+\section{\textbf{Manuscripts Under Review}}
+
+\resumeSubHeadingListStart
+
+\resumeProject
+  {SM3-PSC: Sparse Multi-Modal Mamba for 3D Panoptic Scene Completion with Multi-Scale Feature Refinement}
+  {Co-author -- Manuscript submitted to IEEE Transactions on Image Processing}
+  {2026}
+
+\resumeItemListStart
+  \item Developed SM3-PSC, a sparse multi-modal framework that fuses LiDAR and camera features and employs Mamba-based multi-scale feature refinement for 3D panoptic scene completion.
+  \item Achieved 29.20\% $PQ^\dagger$ on SemanticKITTI, outperforming the previous best method by 3.10 percentage points through improved completion of both object instances and surrounding regions.
+\resumeItemListEnd
+
+
+\resumeProject
+  {LW-PSC: Lightweight Design for LiDAR Panoptic Scene Completion}
+  {Co-author -- Manuscript submitted to Applied Soft Computing}
+  {2026}
+
+\resumeItemListStart
+  \item Developed LW-PSC, a lightweight BEV-based framework that combines Cartesian and Polar representations with center-focused feature refinement for real-time LiDAR panoptic scene completion.
+  \item Achieved 13.59\% PQ at 11.3 FPS on SemanticKITTI, outperforming PaSCo by 1.47 percentage points in PQ while reducing the model size from 40.65M to 29.16M parameters.
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
@@ -310,16 +351,13 @@
 
 \resumeSubHeadingListStart
 
-
   \resumeProject
     {Visual SLAM Profiling and Latency Optimization}
     {VinDynamics}
     {August 2026}
 
   \resumeItemListStart
-    \item Profiled the OKVIS2 visual SLAM pipeline and identified landmark matching and local-window optimization as major bottlenecks, taking approximately 20 ms and 40 ms respectively.
-
-    \item Evaluated lower-latency front-end pose publishing, observing only 1.16 cm RMSE in translational APE relative to back-end poses.
+    \item Profiled the OKVIS2 visual SLAM pipeline, identifying landmark matching and local-window optimization as major bottlenecks, and evaluated low-latency front-end pose publishing with only 1.16 cm translational APE RMSE relative to back-end poses.
 
     \item Redesigned frame scheduling to prioritize the latest available frame and drop stale frames, reducing average front-end latency from 124.00 ms to 47.00 ms and back-end latency from 164.30 ms to 87.64 ms.
   \resumeItemListEnd
@@ -331,11 +369,22 @@
     {July 2026 -- August 2026}
 
   \resumeItemListStart
-    \item Extended an existing LiDAR-based GPU height mapper to integrate Livox LiDAR and Intel RealSense depth data, implementing sensor synchronization, rate limiting, pose lookup, and robot self-filtering.
+    \item Extended a LiDAR-based GPU height mapper to integrate Livox LiDAR and Intel RealSense depth data, implementing sensor synchronization, rate limiting, pose lookup, and robot self-filtering for deployment on an in-house humanoid robot.
 
-    \item Implemented and benchmarked pose extrapolation to compensate for SLAM latency; linear extrapolation reduced translational APE RMSE from 2.148 cm to 0.445 cm (79.3\%) for a 30 Hz depth camera.
+    \item Implemented and benchmarked pose extrapolation to compensate for SLAM latency, reducing translational APE RMSE from 2.148 cm to 0.445 cm (79.3\%) for a 30 Hz depth camera using linear extrapolation.
+  \resumeItemListEnd
 
-    \item Deployed and validated the multi-sensor height mapping system on an in-house humanoid robot with calibrated LiDAR and depth camera data.
+
+  \resumeProject
+    {Scene Flow-Guided Online Continual LiDAR Panoptic Tracking}
+    {Graduation thesis, Soongsil University}
+    {September 2025 -- February 2026}
+
+  \resumeItemListStart
+
+    \item Proposed SF-LPT, the first online continual learning framework for LiDAR panoptic tracking, using self-supervised scene flow for continuous adaptation and temporal instance association across sequential scans.
+    \item Achieved 16.45\% LSTQ on SemanticKITTI in cross-dataset continual adaptation from nuScenes, outperforming CoDEPS by 5.87 percentage points.
+
   \resumeItemListEnd
 
 
@@ -345,7 +394,7 @@
     {March 2023 -- August 2023}
 
   \resumeItemListStart
-    \item Implemented and compared block matching and deep learning approaches for dense stereo matching on SceneFlow (EPE: 77.32\%, D1: 79.04\%).
+    \item Implemented and compared block matching and deep learning approaches for dense stereo matching on SceneFlow (EPE: 77.32 px, D1: 79.04\%).
     \item Reconstructed 3D scenes from estimated disparity maps via triangulation and deployed the pipeline on a Jetson Nano-based wheeled robot.
   \resumeItemListEnd
 
