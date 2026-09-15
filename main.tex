@@ -1,15 +1,3 @@
-%
-%Academic CV LaTeX Template
-% Author: Dubasi Pavan Kumar
-% LinkedIn: https://www.linkedin.com/in/im-pavankumar/
-% License: MIT
-%
-% For errors, suggestions, or improvements, please contact:
-% Email: pavankumard.pg19.ma@nitp.ac.in
-%
-
-
-
 \documentclass[a4paper,11pt]{article}
 
 % Package imports
@@ -91,206 +79,133 @@
   \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
 
-% Custom commands
-\newcommand{\resumeItem}[2]{
-  \item{
-    \textbf{#1}{\hspace{0.5mm}#2 \vspace{-0.5mm}}
-  }
-}
-
-\newcommand{\resumePOR}[3]{
-\vspace{0.5mm}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-        \textbf{#1}\hspace{0.3mm}#2 & \textit{\small{#3}} 
-    \end{tabular*}
-    \vspace{-2mm}
-}
-
-\newcommand{\resumeSubheading}[4]{
-\vspace{0.5mm}\item
-    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
-        \textbf{#1} & {#4} \\
-        {#3} & {#2}\\
-    \end{tabular*}
-    \vspace{-2.4mm}
-}
-
-\newcommand{\resumeProject}[3]{
-  \vspace{0.5mm}\item
-  \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
-    \textbf{#1} & {#3} \\
-    {#2} &
-  \end{tabular*}
-  \vspace{0.5mm}
-}
-
-\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
-
-\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
-\renewcommand{\labelitemii}{$\vcenter{\hbox{\tiny$\circ$}}$}
-
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=1mm]}
-\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
-\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*,labelsep=1mm,itemsep=0.5mm]}
-
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
-\newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2mm}}
-\newcommand{\cvsection}[1]{%
-\vspace{2mm}
-\begin{tcolorbox}
-    \textbf{\large #1}
-\end{tcolorbox}
-    \vspace{-4mm}
-}
-
-\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
-\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
-\newcolumntype{C}{>{\centering\arraybackslash}X}%
-
-% Commands for icon sizing and positioning
-\newcommand{\socialicon}[1]{\raisebox{-0.05em}{\resizebox{!}{1em}{#1}}}
-\newcommand{\ieeeicon}[1]{\raisebox{-0.3em}{\resizebox{!}{1.3em}{#1}}}
-
-% Font options
-\newcommand{\headerfonti}{\fontfamily{phv}\selectfont} % Helvetica-like (similar to Arial/Calibri)
-\newcommand{\headerfontii}{\fontfamily{ptm}\selectfont} % Times-like (similar to Times New Roman)
-\newcommand{\headerfontiii}{\fontfamily{ppl}\selectfont} % Palatino (elegant serif)
-\newcommand{\headerfontiv}{\fontfamily{pbk}\selectfont} % Bookman (readable serif)
-\newcommand{\headerfontv}{\fontfamily{pag}\selectfont} % Avant Garde-like (similar to Trebuchet MS)
-\newcommand{\headerfontvi}{\fontfamily{cmss}\selectfont} % Computer Modern Sans Serif
-\newcommand{\headerfontvii}{\fontfamily{qhv}\selectfont} % Quasi-Helvetica (another Arial/Calibri alternative)
-\newcommand{\headerfontviii}{\fontfamily{qpl}\selectfont} % Quasi-Palatino (another elegant serif option)
-\newcommand{\headerfontix}{\fontfamily{qtm}\selectfont} % Quasi-Times (another Times New Roman alternative)
-\newcommand{\headerfontx}{\fontfamily{bch}\selectfont} % Charter (clean serif font)
 
 \begin{document}
-\headerfontiii
+\fontfamily{ppl}\selectfont
 
 % Header
-\begin{center}
-    {\Huge\textbf{VƯƠNG VIỆT HÙNG}}
-\end{center}
-\vspace{-5mm}
+{\Huge\textbf{VƯƠNG VIỆT HÙNG}}
+\vspace{-2mm}
 
 \section{\textbf{Personal Details}}
 
 \begin{tabular}{p{0.475\textwidth} p{0.525\textwidth}}
 
 \begin{tabular}[t]{l@{\hspace{0.8cm}}l}
-Full name:     & Vương Việt Hùng \\
-Phone:         & +84-583-885-391 \\
-Email:         & \href{mailto:vuongviethung156@gmail.com}{vuongviethung156@gmail.com} \\
-Residence:     & Hanoi, Vietnam \\
-Nationality:   & Vietnamese \\
+Full name:      & Vương Việt Hùng \\
+Phone:          & +84-583-885-391 \\
+Email:          & \href{mailto:vuongviethung156@gmail.com}{vuongviethung156@gmail.com} \\
+Residence:      & Hanoi, Vietnam
 \end{tabular}
 
 &
 
 \begin{tabular}[t]{l@{\hspace{0.5cm}}l}
-
-Languages: & Vietnamese (Native), English (IELTS 7.5) \\
-
-ORCID: &
-\orcidlink{0009-0006-8041-7608}
-\href{https://orcid.org/0009-0006-8041-7608}{0009-0006-8041-7608} \\
-
+Nationality:    & Vietnamese \\
+Languages:      & Vietnamese (Native), English (IELTS 7.5) \\
+ORCID:          & \orcidlink{0009-0006-8041-7608} \href{https://orcid.org/0009-0006-8041-7608}{0009-0006-8041-7608} \\
 Google Scholar: &
-\href{https://scholar.google.com/citations?user=-ajygUwAAAAJ\&hl=en}{Vương Việt Hùng} \\
-
-GitHub: &
-\socialicon{\faGithub}
-\href{https://github.com/vuong-viet-hung}{vuong-viet-hung} \\
-
-LinkedIn: &
-\socialicon{\faLinkedin}
-\href{https://www.linkedin.com/in/v%C6%B0%C6%A1ng-vi%E1%BB%87t-h%C3%B9ng-843199212/}{vương-việt-hùng}
+\href{https://scholar.google.com/citations?user=-ajygUwAAAAJ\&hl=en}{Vương Việt Hùng}
 \end{tabular}
 
 \end{tabular}
+
 
 \section{\textbf{Educational Qualifications}}
-\vspace{-0.4mm}
-
-\resumeSubHeadingListStart
-
-\resumeSubheading
-  {Soongsil University}{March 2024 -- March 2026}
-  {Master's Degree in Electronic Engineering}{Seoul, South Korea}
-
-\resumeItemListStart
-  \item GPA: 4.24/4.50
-  \item Thesis: Scene Flow-Guided Online Continual LiDAR Panoptic Tracking
-  \item Thesis length: 10,387 words
-\resumeItemListEnd
-
-
-\resumeSubheading
-  {Hanoi University of Science and Technology}{August 2019 -- September 2023}
-  {Bachelor's Degree in Control Engineering and Automation}{Hanoi, Vietnam}
-
-  \resumeItemListStart
-  \item GPA: 3.34/4.00
-  \item Thesis: Stereo Matching and 3D Reconstruction
-  \item Thesis length:
-\resumeItemListEnd
-
-\resumeSubHeadingListEnd
-\vspace{-6mm}
-
-\section{\textbf{Employment History}}
-
-\vspace{-0.4mm}
-
-\resumeSubHeadingListStart
-
-\resumeSubheading
-  {VinDynamics}{March 2026 -- current}
-  {SLAM \& Navigation Engineer}{Hanoi, Vietnam}
-\vspace{3mm}
-\small{Developed and deployed SLAM and height mapping systems for humanoid robotic platforms, with a focus on sensor integration, system evaluation, and optimization.}
-
-\resumeSubheading
-  {ANDA Lab, Soongsil University}{March 2024 -- March 2026}
-  {Research Assistant}{Seoul, South Korea}
-\vspace{3mm}
-\small{Conducted research in LiDAR panoptic segmentation, scene completion, domain adaptation, and continual learning; contributed to peer-reviewed publications, researcher mentoring, and technical seminars.}
-
-\resumeSubheading
-  {Rikai Mind}{August 2022 -- January 2023}
-  {AI Engineer Intern}{Hanoi, Vietnam}
-\vspace{3mm}
-\small{Developed and deployed a computer vision system for object volume estimation from monocular images and camera--object distance.}
-
-\resumeSubheading
-  {Mandevices Laboratory, Hanoi University of Science and Technology}{August 2020 -- September 2023}
-  {Research Assistant}{Hanoi, Vietnam}
-\vspace{3mm}
-\small{Conducted research in deep-learning-based bearing fault diagnosis and contributed to data collection, publications, and researcher mentoring.}
-
-\resumeSubHeadingListEnd
-\vspace{-6mm}
-
-
-\section{\textbf{Research Outputs}
-\hfill
-{\scriptsize J=Journal, C=Conference, S=In Submission}}
-
 \vspace{0.5mm}
 
-\subsection*{Published Research:}
+\begin{itemize}[leftmargin=*,labelsep=1mm,label={}]
 
-\small{
+  \vspace{0.5mm}\item
+  \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{Soongsil University} & {Seoul, South Korea} \\
+      {Master's Degree in Electronic Engineering} & {March 2024 -- March 2026}\\
+  \end{tabular*}
+  \vspace{-2.4mm}
+
+  \begin{itemize}[leftmargin=*,labelsep=1mm,itemsep=0.5mm]
+    \item GPA: 4.24/4.50
+    \item Thesis: Scene Flow-Guided Online Continual LiDAR Panoptic Tracking
+    \item Thesis length: 10,387 words
+  \end{itemize}\vspace{-2mm}
+
+
+  \vspace{0.5mm}\item
+  \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{Hanoi University of Science and Technology} & {Hanoi, Vietnam} \\
+      {Bachelor's Degree in Control Engineering and Automation} & {August 2019 -- September 2023}\\
+  \end{tabular*}
+  \vspace{-2.4mm}
+
+  \begin{itemize}[leftmargin=*,labelsep=1mm,itemsep=0.5mm]
+    \item GPA: 3.34/4.00
+    \item Thesis: Stereo Matching and 3D Reconstruction
+    \item Thesis length:
+  \end{itemize}\vspace{-2mm}
+
+\end{itemize}\vspace{2mm}
+\vspace{-6mm}
+
+
+\section{\textbf{Employment History}}
+\vspace{0.5mm}
+
+\begin{itemize}[leftmargin=*,labelsep=1mm,label={}]
+
+  \vspace{0.5mm}\item
+      \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+          \textbf{VinDynamics} & {Hanoi, Vietnam} \\
+          {SLAM \& Navigation Engineer} & {March 2026 -- current}\\
+      \end{tabular*}
+      \vspace{-2.4mm}
+  \vspace{3mm}
+  Developed and deployed SLAM and height mapping systems for humanoid robotic platforms, with a focus on sensor integration, system evaluation, and optimization.
+
+
+  \vspace{0.5mm}\item
+      \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+          \textbf{ANDA Lab, Soongsil University} & {Seoul, South Korea} \\
+          {Research Assistant} & {March 2024 -- March 2026}\\
+      \end{tabular*}
+      \vspace{-2.4mm}
+  \vspace{3mm}
+  Conducted research in LiDAR panoptic segmentation, scene completion, domain adaptation, and continual learning; contributed to peer-reviewed publications, researcher mentoring, and technical seminars.
+
+
+  \vspace{0.5mm}\item
+      \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+          \textbf{Rikai Mind} & {Hanoi, Vietnam} \\
+          {AI Engineer Intern} & {August 2022 -- January 2023}\\
+      \end{tabular*}
+      \vspace{-2.4mm}
+  \vspace{3mm}
+  Developed and deployed a computer vision system for object volume estimation from monocular images and camera--object distance.
+
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{Mandevices Laboratory, Hanoi University of Science and Technology} & {Hanoi, Vietnam} \\
+        {Research Assistant} & {August 2020 -- September 2023}\\
+    \end{tabular*}
+    \vspace{-2.4mm}
+\vspace{3mm}
+Conducted research in deep-learning-based bearing fault diagnosis and contributed to data collection, publications, and researcher mentoring.
+
+\end{itemize}\vspace{2mm}
+\vspace{-6mm}
+
+
+\section{\textbf{Research Outputs}}
+\vspace{0.5mm}
+
+\subsection*{\scshape\underline{Journal Articles}}
 
 \begin{enumerate}[
     leftmargin=*,
     labelsep=0.5em,
-    align=left,
-    widest={[\textbf{J.1}]},
-    itemindent=0em
+    align=left
 ]
 
-\item[\textbf{[J.1]}]
+\item
 \textbf{Vuong, H. V.}, \& Yoo, M. (2026).
 Domain adaptive LiDAR panoptic segmentation via pseudo-supervised instance learning.
 \textit{IEEE Transactions on Intelligent Transportation Systems}.
@@ -305,7 +220,7 @@ Journal Impact Factor: 9.1
 \end{itemize}
 
 
-\item[\textbf{[J.2]}]
+\item
 Ha-Phan, N.-Q., \textbf{Vuong, H. V.}, \& Yoo, M. (2025).
 Instance embedding as queries for DETR-based LiDAR panoptic segmentation.
 \textit{IEEE Transactions on Intelligent Vehicles, 10}(10), 4629--4641.
@@ -314,7 +229,7 @@ Instance embedding as queries for DETR-based LiDAR panoptic segmentation.
 
 Ha-Phan, N.-Q. and Vuong, H. V. contributed equally to this work.
 
-Journal Impact Factor: 14.3 \\
+Journal Impact Factor: 14.3
 
 \begin{itemize}[leftmargin=1.5em]
     \item Proposed a DETR-based architecture that uses instance embeddings as object queries for LiDAR panoptic segmentation.
@@ -322,7 +237,7 @@ Journal Impact Factor: 14.3 \\
 \end{itemize}
 
 
-\item[\textbf{[J.3]}]
+\item
 Nguyen, K. N. M., \textbf{Vuong, H. V.}, Ha-Phan, N.-Q., \& Yoo, M. (2025).
 FuPaSCo: Long-range and local context fusion for 3D panoptic scene completion.
 \textit{Image and Vision Computing, 163}, 105776.
@@ -333,11 +248,11 @@ Journal Impact Factor: 4.2
 
 \begin{itemize}[leftmargin=1.5em]
     \item Developed FuPaSCo, a dual-branch CNN--Transformer framework that combines local and long-range features through feature fusion and alignment for LiDAR panoptic scene completion.
-    \item Achieved 26.10\% $PQ^\dagger$ on SemanticKITTI, outperforming PaSCo by 2.49 percentage points.
+    \item Achieved 26.10\% $\mathrm{PQ}^\dagger$ on SemanticKITTI, outperforming PaSCo by 2.49 percentage points.
 \end{itemize}
 
 
-\item[\textbf{[J.4]}]
+\item
 Nguyen, T. H., \textbf{Vuong, V. H.}, Dao, D. T., Tran, T. T., \& Hoang, S. H. (2024).
 Generalized simulation-based domain adaptation approach for intelligent bearing fault diagnosis.
 \textit{Arabian Journal for Science and Engineering, 49}(12), 16941--16957.
@@ -351,8 +266,17 @@ Journal Impact Factor: 3.1
     \item Achieved 74--98\% fault classification accuracy across different bearing types using a CNN trained on synthesized vibration signals.
 \end{itemize}
 
+\end{enumerate}
 
-\item[\textbf{[C.1]}]
+\subsection*{\scshape\underline{Published Conference Proceedings}}
+
+\begin{enumerate}[
+    leftmargin=*,
+    labelsep=0.5em,
+    align=left
+]
+
+\item
 Nguyen, T. H., Le, H. A., \textbf{Vuong, V. H.}, Tran, L. D. A.,
 Dao, D. T., Tran, T. T., \& Hoang, S. H. (2024).
 ConvMamba: A data-efficient neural network for bearing fault diagnosis.
@@ -368,40 +292,29 @@ In \textit{2024 7th International Conference on Green Technology and Sustainable
 
 \end{enumerate}
 
-}
-
-
-\subsection*{Manuscripts Under Review:}
-
-\small{
+\subsection*{\scshape\underline{Manuscripts Under Review}}
 
 \begin{enumerate}[
     leftmargin=*,
     labelsep=0.5em,
-    align=left,
-    widest={[\textbf{S.1}]},
-    itemindent=0em
+    align=left
 ]
 
-\item[\textbf{[S.1]}]
+\item
 Pham, T. P., \textbf{Vuong, H. V.}, Ha-Phan, N.-Q., \& Yoo, M. (2026).
 SM3-PSC: Sparse multi-modal Mamba for 3D panoptic scene completion with multi-scale feature refinement.
-\textit{Manuscript submitted for publication to IEEE Transactions on Image Processing}.
-
-Journal Impact Factor: 15.3
+\textit{Manuscript submitted for publication}.
 
 \begin{itemize}[leftmargin=1.5em]
     \item Developed SM3-PSC, a sparse multi-modal framework that fuses RGB semantics with LiDAR voxels through deformable cross-attention and uses Mamba for efficient long-range context modeling.
-    \item Achieved 28.20\% $PQ^\dagger$ on SemanticKITTI, outperforming FuPaSCo by 2.10 percentage points while running the 3D pipeline 2.8$\times$ faster.
+    \item Achieved 28.20\% $\mathrm{PQ}^\dagger$ on SemanticKITTI, outperforming FuPaSCo by 2.10 percentage points while running the 3D pipeline 2.8$\times$ faster.
 \end{itemize}
 
 
-\item[\textbf{[S.2]}]
+\item
 Nguyen, K. N. M., \textbf{Vuong, H. V.}, Ha-Phan, N.-Q., \& Yoo, M. (2026).
 LW-PSC: Lightweight design for LiDAR panoptic scene completion.
-\textit{Manuscript submitted for publication to Applied Soft Computing}.
-
-Journal Impact Factor: 7.8
+\textit{Manuscript submitted for publication}.
 
 \begin{itemize}[leftmargin=1.5em]
     \item Developed LW-PSC, a lightweight BEV-based framework that combines Cartesian and Polar representations with center-focused feature refinement for real-time LiDAR panoptic scene completion.
@@ -409,89 +322,5 @@ Journal Impact Factor: 7.8
 \end{itemize}
 
 \end{enumerate}
-
-}
-
-
-\section{\textbf{Projects}}
-
-\resumeSubHeadingListStart
-
-  \resumeProject
-    {Visual SLAM Profiling and Latency Optimization}
-    {VinDynamics}
-    {August 2026}
-
-  \resumeItemListStart
-    \item Profiled the OKVIS2 visual SLAM pipeline, identifying landmark matching and local-window optimization as major bottlenecks, and evaluated low-latency front-end pose publishing with only 1.16 cm translational APE RMSE relative to back-end poses.
-
-    \item Redesigned frame scheduling to prioritize the latest available frame and drop stale frames, reducing average front-end latency from 124.00 ms to 47.00 ms and back-end latency from 164.30 ms to 87.64 ms.
-  \resumeItemListEnd
-
-
-  \resumeProject
-    {Multi-Sensor Local Height Mapping for Humanoid Robot}
-    {VinDynamics}
-    {July 2026 -- August 2026}
-
-  \resumeItemListStart
-    \item Extended a LiDAR-based GPU height mapper to integrate Livox LiDAR and Intel RealSense depth data, implementing sensor synchronization, rate limiting, pose lookup, and robot self-filtering for deployment on an in-house humanoid robot.
-
-    \item Implemented and benchmarked pose extrapolation to compensate for SLAM latency, reducing translational APE RMSE from 2.148 cm to 0.445 cm (79.3\%) for a 30 Hz depth camera using linear extrapolation.
-  \resumeItemListEnd
-
-
-  \resumeProject
-    {Scene Flow-Guided Online Continual LiDAR Panoptic Tracking}
-    {Graduation thesis, Soongsil University}
-    {September 2025 -- February 2026}
-
-  \resumeItemListStart
-
-    \item Proposed SF-LPT, the first online continual learning framework for LiDAR panoptic tracking, using self-supervised scene flow for continuous adaptation and temporal instance association across sequential scans.
-    \item Achieved 16.45\% LSTQ on SemanticKITTI in cross-dataset continual adaptation from nuScenes, outperforming CoDEPS by 5.87 percentage points.
-
-  \resumeItemListEnd
-
-
-  \resumeProject
-    {Stereo Matching and 3D Reconstruction}
-    {Graduation thesis, Hanoi University of Science and Technology}
-    {March 2023 -- August 2023}
-
-  \resumeItemListStart
-    \item Implemented and compared block matching and deep learning approaches for dense stereo matching on SceneFlow (EPE: 77.32 px, D1: 79.04\%).
-    \item Reconstructed 3D scenes from estimated disparity maps via triangulation and deployed the pipeline on a Jetson Nano-based wheeled robot.
-  \resumeItemListEnd
-
-
-  \resumeProject
-    {Object Volume Estimation from Images}
-    {Rikai Mind}
-    {August 2022 -- December 2022}
-
-  \resumeItemListStart
-    \item Developed an object volume estimation model from monocular images and camera--object distance, achieving an $R^2$ score of 84.78\%.
-    \item Extracted visual embeddings with CNNs, localized objects using keypoint regression, and fused visual features with camera--object distance for volume regression; deployed the model using FastAPI.
-  \resumeItemListEnd
-
-\resumeSubHeadingListEnd
-
-
-\section{\textbf{Skills}}
-\vspace{-0.4mm}
- \resumeHeadingSkillStart
-  \resumeSubItem{Programming languages: }
-    {Python, C/C++, MATLAB}
-  \resumeSubItem{Frameworks: }
-    {PyTorch, TensorFlow, OpenCV, ROS2, Kalibr (for sensor calibration)}
-  \resumeSubItem{Hardware platforms: }
-    {Jetson Orin Nano, Jetson Nano, Raspberry Pi}
-  \resumeSubItem{Sensors: }
-    {Intel RealSense camera, ZED X camera, Livox LiDAR}
-  \resumeSubItem{Development and deployment tools: }
-    {Git, GitHub, GitLab, Docker, FastAPI, Milvus}
-  \resumeSubItem{Others: }{LaTex}
- \resumeHeadingSkillEnd
 
 \end{document}
